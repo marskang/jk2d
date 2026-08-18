@@ -1,7 +1,6 @@
 #include "geometry.h"
 #include "global.h"
-#include <GL/glew.h>
-#include <GL/wglew.h>
+#include "platform_gl.h"
 
 void DrawQuadF(float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4) {
 	float vertices[] = {
@@ -50,7 +49,6 @@ void DrawQuadI(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4) {
 		nx3,ny3,0.0,
 		nx4,ny4,0.0,
 	};
-	const GLubyte indices[] = {0,1,2,3,4,5};
 	glEnableClientState(GL_VERTEX_ARRAY);
 	glVertexPointer(3, GL_FLOAT, 0, vertices);
 	//glDrawElements(GL_TRIANGLE_STRIP,6, GL_UNSIGNED_BYTE, indices);

@@ -1,8 +1,7 @@
 #ifndef ex_texture_h
 #define ex_texture_h
 #include <png.h>
-#include <GL/glew.h>
-#include <GL/wglew.h>
+#include "platform_gl.h"
 typedef struct PointD {
 	int x;
 	int y;

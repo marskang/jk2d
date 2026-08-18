@@ -1,5 +1,4 @@
-#include <GL/glew.h>
-#include <GL/wglew.h>
+#include "platform_gl.h"
 #include <stdio.h>
 #include <stddef.h>
 #include <string.h>
